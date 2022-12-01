@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velkommen til Karols kafe</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--<div class="container1">
+        <nav class="navbar1"> 
+
+            <div class="logo2">KAROLS CAFE</div> 
+         
+                <a href="#" class="toggle-button">            
+                    <span class="bar"></span>             
+                    <span class="bar"></span>            
+                    <span class="bar"></span>           
+                    <span class="bar"></span>          
+                </a>           
+            <div class="navbar-links">           
+                <ul>          
+                    <li><a href="index.html">HJEM</a></li>          
+                    <li><a href="meny.html">MENY</a></li>          
+                    <li><a href="accessibility.html">ACCESSIBILITY</a></li>        
+                    <li><a href="omoss.html">OM OSS</a></li>    
+                    <li class="navbar-reservasjon"><a href="reservation.html">RESERVASJON</a></li>   
+                </div> 
+                    <li class="reservasjon"><a href="reservation.html">RESERVASJON</a></li>  
+                </ul>
+        </nav> 
+    </div>-->
+    <header class="header">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+            <div class="logo">
+                <a href="#">KAROLS CAFE</a>
+            </div>
+            <input type="checkbox" id="nav-check">
+            <label for="nav-check" class="nav-toggler">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html" class="active">HJEM</a></li>
+                    <li><a href="meny.html">MENY</a></li>
+                    <li><a href="accessibility.html">ACCECIBILITY</a></li>
+                    <li><a href="omoss.html">TEKNOLOGI OG SAMFUNN</a></li>
+                    <li class="reservasjon-responsive"><a href="reservation.html">RESERVASJON</a></li> 
+            </nav>
+            <li class="reservasjon"><a href="reservation.html">RESERVASJON</a></li> 
+            </div>
+        </div>
+     </header>
+    <div class="container-sidestart hjem">
+        <div class="overskrift hovedside">
+            <h2>KAROLS CAFÉ</h2>
+            <br>
+            <p class="overskift-under">Velkommen til oss på Level 35, Shangri-La The Shard, London</p> 
+       
+        </div>
+        
+    </div>
+
+  <div class ="container-velkommen" id="reservasjon-side2">
+
+    <div class="velkommen-right">
+        <div class="velkommen-content">
+            <h1>VELKOMMEN TIL OSS</h1>
+            <p>Tivander åpnet dørene i oktober 2018 og har siden oppstarten stått for gode matopplevelser til våre besøkende gjester. Lokalet er siste tilskudd til Høyres Hus Konferanse & Selskapslokaler og holder til i 2. etasje i Stortingsgaten 20. 
+                <br>
+                <br>
+                        Med en kapasitet på opptil 200 personer kan vi tilby både store og mindre grupper et lokale med fleksibilitet og hyggelig atmosfære..</p>
+            <a href="#" class="btn" id="event-booking">LES MER</a>
+        </div>
+    </div>
+    <div class="velkommen-left">
+       
+    </div>
+</div>
+
+<div class="line-res"></div>
+
+<div class="services">
+    
+
+    <div class="box">
+        <div class="card">
+            <img src="menybilde.png" alt="" class="menybilde">
+            <h5>MENY</h5>
+            <div class="pra">
+                <p>Vår meny består av varierte retter fra alle verdensdeler, kom innom for lunsj, middag eller drinker.
+                </p>
+
+                <p style="text-align:center;">
+                    <a class="button" href="meny.html">VIEW MENU</a>
+                </p>
+
+            </div>
+        </div>
+      
+        <div class="card">
+            <img src="kontaktbilde.png" alt="" class="reservasjonbilde">
+            <h5>RESERVASJON</h5>
+            <div class="pra">
+                <p>Bestill bord, eller reserver for event. Vi tilbyr lokalet til bryllup, konfirmasjon,etc. Vi har plass til opp mot 300
+                </p>
+
+                <p style="text-align:center;">
+                    <a class="button" href="#">RESERVER</a>
+                </p>
+
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="forsidebilde1.png" alt="" class="omossbilde">
+            <h5>OM OSS</h5>
+            <div class="pra">
+                <p>Vi ligger i Karols gate rett ved slottet. Vi har flere stilig fasiliteter for deg og dine! Nyrenovert i 2022.
+                </p>
+
+                <p style="text-align:center;">
+                    <a class="button" href="#">LES MER</a>
+                </p>
+
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<script> 
+
+    const toggleButton = document.getElementsByClassName('toggle-button')[0] 
+    
+    const navbarLinks = document.getElementsByClassName('navbar-links')[0] 
+
+    toggleButton.addEventListener('click', () => { 
+    
+    navbarLinks.classList.toggle('active') 
+    
+    }) 
+    
+    </script> 
+
+</body>
+</html>
